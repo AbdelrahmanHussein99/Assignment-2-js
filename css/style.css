@@ -1,0 +1,28 @@
+:root {
+    --ff-primary: 'Source Sans 3', sans-serif;
+    --ff-secondray: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, hsl(331, 91%, 79%), hsl(24, 100%, 74%));
+    font-family: var(--ff-primary);
+}
+
+
+h1 {
+    font-size: 80px;
+    font-size: clamp(65px, calc(24px + 3.3vw), 80px);
+    font-weight: 900;
+}
+
+#quoteBox {
+    min-height: 500px;
+    border: 5px solid black;
+    font-family: var(--ff-secondray);
+}
+
+@media screen and (max-width:768px) {
+    #quoteBox {
+        min-height: 450px;
+    }
+}
